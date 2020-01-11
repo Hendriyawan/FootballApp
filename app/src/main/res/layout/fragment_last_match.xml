@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorBackground"
+                tools:context=".fragment.LastMatchFragment">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_last_match"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_events"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <LinearLayout
+            android:id="@+id/layout_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/loading_animation_top_margin"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/loading_anim_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/animation_loading"
+                android:src="@drawable/ic_soccer_ball"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FootballApp</string>
+    <string name="text_vs">VS</string>
+    <string name="menu_title_search">Search</string>
+    <string name="animation_loading">animation loading</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_goals">Goals</string>
+    <string name="text_yellow_card">Yellow Card</string>
+    <string name="text_red_card">Red Card</string>
+    <string name="text_separator">:</string>
+    <string name="title_bottom_nav_league">League</string>
+    <string name="title_bottom_nav_favorite_league">Favorite League</string>
+    <string name="toast_search_event_found">Event Found !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_menu_add_to_favorite">Add to Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="content_description_stadium_team_photo">Stadium team photo</string>
+    <string name="text_detail_team_stadium">Stadium</string>
+    <string name="text_detail_team_stadium_capacity">Stadium Capacity</string>
+    <string name="text_detail_team_website">Website</string>
+</resources>

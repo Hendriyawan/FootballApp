@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="item_card_content_padding">3dp</dimen>
+    <dimen name="item_card_elevation">2dp</dimen>
+    <dimen name="item_card_layout_margin">8dp</dimen>
+    <dimen name="item_card_corner_radius">10dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="loading_animation_top_margin">32dp</dimen>
+</resources>

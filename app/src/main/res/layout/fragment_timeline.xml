@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/colorBackground"
+                  android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="@dimen/item_card_content_padding">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/item_card_layout_margin"
+                    android:paddingEnd="@dimen/item_card_layout_margin"
+                    android:paddingTop="5dp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/text_goals"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_home_goals"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_away_goals"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:cardUseCompatPadding="true"
+                                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                                            app:contentPadding="@dimen/item_card_content_padding">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:paddingStart="@dimen/item_card_layout_margin"
+                          android:paddingEnd="@dimen/item_card_layout_margin"
+                          android:paddingTop="5dp">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ImageView android:layout_width="20dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/yellow_card"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                              android:textStyle="bold"
+                              android:layout_marginStart="@dimen/item_card_layout_margin"
+                              android:text="@string/text_yellow_card"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_home_yellow_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_away_yellow_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:cardUseCompatPadding="true"
+                                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                                            app:contentPadding="@dimen/item_card_content_padding">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:paddingStart="@dimen/item_card_layout_margin"
+                          android:paddingEnd="@dimen/item_card_layout_margin"
+                          android:paddingTop="5dp">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <ImageView android:layout_width="20dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/red_card"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                              android:textStyle="bold"
+                              android:layout_marginStart="@dimen/item_card_layout_margin"
+                              android:text="@string/text_red_card"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_home_red_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/detail_away_red_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="David Becam - 20\nMessi - 30"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

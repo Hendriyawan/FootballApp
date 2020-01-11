@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_bottom_sheet"
+        app:behavior_hideable="true"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        android:elevation="@dimen/design_appbar_elevation"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+                android:id="@+id/close_bottom_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"/>
+
+        <ImageView
+                android:id="@+id/detail_badge_league"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                tools:src="@drawable/ic_trophy_white_24dp"
+                tools:tint="@color/colorPrimary"
+                android:layout_marginTop="32dp"
+                android:layout_height="100dp"/>
+
+        <TextView
+                android:id="@+id/detail_desc_league"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/detail_badge_league"
+                android:gravity="start"
+                tools:text="@string/app_name"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/item_card_content_padding"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</ScrollView>

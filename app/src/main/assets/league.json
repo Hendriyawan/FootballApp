@@ -1,0 +1,54 @@
+{
+  "league": [
+    {
+      "id": "4328",
+      "name": "English Premier League",
+      "badge": "file:///android_asset/1_english_premier_league.png"
+    },
+    {
+      "id": "4334",
+      "name": "French Ligue 1",
+      "badge": "file:///android_asset/2_french_ligue_1.png"
+    },
+    {
+      "id": "4331",
+      "name": "German Bundesliga",
+      "badge": "file:///android_asset/3_german_bundesliga.png"
+    },
+    {
+      "id": "4332",
+      "name": "Italian Serie A",
+      "badge": "file:///android_asset/4_italian_serie_a.png"
+    },
+    {
+      "id": "4335",
+      "name": "Spanish La Liga",
+      "badge": "file:///android_asset/5_spanish_la_liga.png"
+    },
+    {
+      "id": "4346",
+      "name": "American Mayor League",
+      "badge": "file:///android_asset/6_american_mayor_league.png"
+    },
+    {
+      "id": "4356",
+      "name": "Australian A League",
+      "badge": "file:///android_asset/7_australian_a_league.png"
+    },
+    {
+      "id": "4344",
+      "name": "Protugeuese Premiera Liga",
+      "badge": "file:///android_asset/8_portugeuese_premiera_liga.png"
+    },
+    {
+      "id": "4330",
+      "name": "Scotish Premier League",
+      "badge": "file:///android_asset/9_scotish_premier_league.png"
+    },
+    {
+      "id": "4396",
+      "name": "English League 1",
+      "badge": "file:///android_asset/10_english_league_1.png"
+    }
+  ]
+}

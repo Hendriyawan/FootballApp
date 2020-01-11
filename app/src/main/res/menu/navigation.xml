@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navigation_league"
+          android:title="@string/title_bottom_nav_league"
+          android:icon="@drawable/ic_trophy_white_24dp"/>
+
+    <item android:id="@+id/navigation_league_favorite"
+          android:title="@string/title_bottom_nav_favorite_league"
+          android:icon="@drawable/ic_favorite"/>
+
+</menu>

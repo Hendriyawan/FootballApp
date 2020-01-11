@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.DetailLeagueActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_height="@dimen/app_bar_height"
+            app:elevation="0dp"
+            app:toolbarId="@+id/toolbar"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:toolbarId="@+id/toolbar"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary">
+
+            <ImageView
+                    android:id="@+id/detail_badge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    android:contentDescription="@null"/>
+
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_width="match_parent"
+                        app:layout_collapseMode="pin"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+                <com.ferfalk.simplesearchview.SimpleSearchView
+                        android:id="@+id/search_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:type="card"
+                        android:background="@color/colorPrimary"/>
+
+            </FrameLayout>
+
+            <ImageView
+                    android:id="@+id/detail_show_desc"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_info"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorHeight="0dp"
+                android:background="@drawable/bg_tab_layout"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabSelectedTextColor="@android:color/white"
+                android:scrollbars="horizontal"
+                app:tabMode="fixed"
+                app:tabGravity="center"/>
+
+        <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_pager"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_detail_league"/>
+
+</android.support.design.widget.CoordinatorLayout>
