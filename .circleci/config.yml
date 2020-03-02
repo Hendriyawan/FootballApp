@@ -8,6 +8,10 @@ jobs:
     executor: android/android
         
     steps:
+
+      - run:
+          name: chmod permissions
+          command: chmod +x ./gradlew
       - checkout
       - run:
           command: ./gradlew build
